@@ -1,0 +1,35 @@
+name: Feature Request
+description: Propose a new feature or improvement for PrintBox
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - AirPrint / IPP Server
+        - Raw TCP / Network Protocols
+        - Printer & USB Compatibility
+        - Rasterizer / Halftone Quality
+        - Toner / Supply Tracking
+        - Android TV UI / UX
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What problem does this solve or what workflow would this improve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: How should it work from a user or developer perspective?
+    validations:
+      required: true

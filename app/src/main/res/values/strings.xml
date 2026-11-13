@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PrintBox</string>
+    <string name="server_title">PrintBox</string>
+    <string name="btn_rescan">Rescan USB</string>
+    <string name="btn_test_page">Print Test Page</string>
+    <string name="btn_reload_firmware">Reload Firmware</string>
+    <string name="btn_mark_refilled">Mark Refilled</string>
+    <string name="btn_use_chip">Use Chip %</string>
+    <string name="btn_tech_logs">Technical Logs</string>
+    <string name="btn_show_summary">Show Summary</string>
+    <string name="btn_restart_service">Restart Server</string>
+    <string name="initial_print_server">SERVER STARTING</string>
+    <string name="initial_network_address">0.0.0.0:9100</string>
+    <string name="initial_printer_badge">WAITING FOR USB</string>
+    <string name="initial_printer_headline">Looking for Printer…</string>
+    <string name="initial_no_usb_printer_attached">No USB printer detected on Mi Box</string>
+    <string name="initial_printer_hint">Connect your HP LaserJet P1102 via USB and power it ON.</string>
+    <string name="initial_supply_title">TONER &amp; COUNTER</string>
+    <string name="initial_supply_value">Unknown</string>
+    <string name="initial_supply_details">Waiting for printer chip…</string>
+    <string name="initial_session_stats">Session: 0 jobs • 0 KB</string>
+    <string name="initial_recent_activity">RECENT ACTIVITY</string>
+    <string name="initial_server_log">TECHNICAL CONSOLE</string>
+    <string name="initial_log_message">[System] PrintBox initialized.\n</string>
+</resources>

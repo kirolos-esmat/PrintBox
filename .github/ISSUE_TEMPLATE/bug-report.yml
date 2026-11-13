@@ -1,0 +1,44 @@
+name: Bug Report
+description: Report a crash, print failure, USB issue, or UI bug in PrintBox
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue clearly and what you expected to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Plug printer into TV box
+        2. Print a 2-page PDF from macOS / iOS AirPrint
+        3. Observe status on screen / port 9101
+    validations:
+      required: true
+
+  - type: input
+    id: tv-device
+    attributes:
+      label: Android TV Box & Android Version
+      placeholder: "e.g., Xiaomi Mi Box S, Android 11"
+    validations:
+      required: true
+
+  - type: input
+    id: client-printer
+    attributes:
+      label: Printer Model & Client OS
+      placeholder: "e.g., HP LaserJet P1102, iOS 18 / macOS 15 / Windows 11"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Diagnostic Output (`http://<tv-ip>:9101/`) or `adb logcat`
+      description: Paste recent logs from port 9101 (scrub any sensitive hostnames if needed)
+      render: text

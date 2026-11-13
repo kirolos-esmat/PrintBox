@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="108"
+                android:endY="108"
+                android:startX="0"
+                android:startY="0"
+                android:type="linear">
+                <item android:color="#1E3A8A" android:offset="0.0" />
+                <item android:color="#0B1324" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M38,25 C46,18 62,18 70,25"
+        android:strokeColor="#60A5FA"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+    <path
+        android:pathData="M44,33 C50,28 58,28 64,33"
+        android:strokeColor="#93C5FD"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+    <path
+        android:fillColor="#CBD5E1"
+        android:pathData="M37,40 h34 a3,3 0 0 1 3,3 v9 h-40 v-9 a3,3 0 0 1 3,-3 z" />
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M28,49 h52 a8,8 0 0 1 8,8 v14 a8,8 0 0 1 -8,8 h-52 a8,8 0 0 1 -8,-8 v-14 a8,8 0 0 1 8,-8 z" />
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M75,55.5 a3.5,3.5 0 1 0 0,7 a3.5,3.5 0 1 0 0,-7 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,67 h36 a3,3 0 0 1 3,3 v15 a3,3 0 0 1 -3,3 h-36 a3,3 0 0 1 -3,-3 v-15 a3,3 0 0 1 3,-3 z"
+        android:strokeColor="#94A3B8"
+        android:strokeWidth="1.5" />
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M41.5,73 h21 a1.5,1.5 0 0 1 0,3 h-21 a1.5,1.5 0 0 1 0,-3 z" />
+    <path
+        android:fillColor="#94A3B8"
+        android:pathData="M41.5,79 h14 a1.5,1.5 0 0 1 0,3 h-14 a1.5,1.5 0 0 1 0,-3 z" />
+</vector>

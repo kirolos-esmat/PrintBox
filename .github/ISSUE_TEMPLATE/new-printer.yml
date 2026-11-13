@@ -1,0 +1,65 @@
+name: Request New Printer Support
+description: Suggest or help add USB + AirPrint support for another printer model
+title: "[Printer]: "
+labels: ["printer-support", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand PrintBox printer compatibility! Fill in as much detail as you have—especially the USB IDs and IEEE-1284 Device ID from `http://<tv-ip>:9101/`.
+
+  - type: input
+    id: printer-model
+    attributes:
+      label: Printer Make & Model
+      description: Exact brand and model name
+      placeholder: "e.g., HP LaserJet P1005 / Canon LBP2900 / Brother HL-L2350DW"
+    validations:
+      required: true
+
+  - type: input
+    id: usb-ids
+    attributes:
+      label: USB Vendor ID & Product ID (VID:PID)
+      description: Shown in PrintBox logs on USB attach or `lsusb` on Linux/macOS
+      placeholder: "e.g., 0x03F0:0x3D17"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Printer Protocol / Language (if known)
+      options:
+        - Not sure
+        - ZjStream / foo2zjs (HP P1005, P1006, P1102, etc.)
+        - PWG-Raster / URF / IPP Everywhere native
+        - PDF / PostScript native
+        - PCL / PCLm / PCL XL
+        - Other host-based protocol (foo2qpdl, foo2xqx, etc.)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: printer-behaviors
+    attributes:
+      label: Hardware Behaviors (check all that apply)
+      options:
+        - label: Printer exposes a virtual CD-ROM / Mass Storage device first (Smart Install)
+        - label: Printer requires firmware download on cold boot
+        - label: Works via Raw TCP (:9100) from Windows/Linux driver already
+
+  - type: textarea
+    id: device-id
+    attributes:
+      label: Diagnostics Output (`http://<tv-ip>:9101/`) or `lsusb -v`
+      description: Paste relevant USB interface descriptors or IEEE-1284 `GET_DEVICE_ID` output
+      render: text
+
+  - type: checkboxes
+    id: willing-to-test
+    attributes:
+      label: Testing
+      options:
+        - label: I have physical access to this printer and can test debug APKs
+          required: false
